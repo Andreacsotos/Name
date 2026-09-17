@@ -1,0 +1,34 @@
+{
+  "name": "smart-size",
+  "version": "1.0.0",
+  "description": "Intelligent responsive design tool for Figma - Auto-resize designs to multiple formats",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "npm run build:plugin && npm run build:ui && tsc",
+    "build:plugin": "esbuild src/plugin.ts --bundle --outfile=dist/plugin.js --external:figma --format=iife --platform=browser",
+    "build:ui": "node scripts/build-ui.js",
+    "start": "node dist/index.js",
+    "watch": "esbuild src/plugin.ts --bundle --outfile=dist/plugin.js --external:figma --format=iife --platform=browser --watch"
+  },
+  "keywords": [
+    "figma",
+    "plugin",
+    "resize",
+    "responsive",
+    "design",
+    "automation"
+  ],
+  "author": "Andrea",
+  "license": "MIT",
+  "dependencies": {
+    "figma-api": "^1.15.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.20.0",
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0"
+  }
+}

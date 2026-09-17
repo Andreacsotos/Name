@@ -1,0 +1,100 @@
+{
+  "META": {
+    "1080x1080": {
+      "name": "Instagram Square / Facebook",
+      "width": 1080,
+      "height": 1080,
+      "aspectRatio": 1,
+      "category": "social",
+      "priority": 1
+    },
+    "1080x1350": {
+      "name": "Instagram Feed",
+      "width": 1080,
+      "height": 1350,
+      "aspectRatio": 0.8,
+      "category": "social",
+      "priority": 2
+    },
+    "1000x1000": {
+      "name": "Facebook Square",
+      "width": 1000,
+      "height": 1000,
+      "aspectRatio": 1,
+      "category": "social",
+      "priority": 3
+    },
+    "1080x1920": {
+      "name": "Instagram Story / TikTok",
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": 0.5625,
+      "category": "social",
+      "priority": 4
+    },
+    "1920x1080": {
+      "name": "YouTube Thumbnail / Widescreen",
+      "width": 1920,
+      "height": 1080,
+      "aspectRatio": 1.777,
+      "category": "display",
+      "priority": 5
+    }
+  },
+  "DISPLAY": {
+    "300x250": {
+      "name": "Medium Rectangle (IAB)",
+      "width": 300,
+      "height": 250,
+      "aspectRatio": 1.2,
+      "category": "banner",
+      "priority": 1,
+      "complexity": "high"
+    },
+    "300x600": {
+      "name": "Half Page Ad (IAB)",
+      "width": 300,
+      "height": 600,
+      "aspectRatio": 0.5,
+      "category": "banner",
+      "priority": 2,
+      "complexity": "high"
+    },
+    "320x250": {
+      "name": "Mobile Rectangle",
+      "width": 320,
+      "height": 250,
+      "aspectRatio": 1.28,
+      "category": "banner",
+      "priority": 3,
+      "complexity": "high"
+    },
+    "160x1600": {
+      "name": "Wide Skyscraper",
+      "width": 160,
+      "height": 1600,
+      "aspectRatio": 0.1,
+      "category": "banner",
+      "priority": 4,
+      "complexity": "extreme"
+    },
+    "300x50": {
+      "name": "Mobile Banner",
+      "width": 300,
+      "height": 50,
+      "aspectRatio": 6,
+      "category": "banner",
+      "priority": 5,
+      "complexity": "extreme"
+    },
+    "320x50": {
+      "name": "Mobile Banner Standard",
+      "width": 320,
+      "height": 50,
+      "aspectRatio": 6.4,
+      "category": "banner",
+      "priority": 6,
+      "complexity": "extreme"
+    }
+  }
+}

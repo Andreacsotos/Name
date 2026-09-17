@@ -1,0 +1,221 @@
+{
+  "rules": [
+    {
+      "name": "Large Format",
+      "condition": "width >= 1000 && height >= 800",
+      "layout": "full",
+      "elements": {
+        "logo": {
+          "show": true,
+          "scale": 1,
+          "position": "top-left"
+        },
+        "image": {
+          "show": true,
+          "scale": 1,
+          "minHeight": "50%"
+        },
+        "title": {
+          "show": true,
+          "scale": 1,
+          "minSize": 140
+        },
+        "subtitle": {
+          "show": true,
+          "scale": 1,
+          "minSize": 16
+        },
+        "body": {
+          "show": true,
+          "scale": 1,
+          "minSize": 14
+        },
+        "legal": {
+          "show": true,
+          "scale": 1,
+          "minSize": 10
+        }
+      },
+      "spacing": {
+        "margins": "proportional",
+        "gaps": "proportional"
+      }
+    },
+    {
+      "name": "Medium Format (300x250)",
+      "condition": "width === 300 && height === 250",
+      "layout": "minimal",
+      "elements": {
+        "logo": {
+          "show": true,
+          "scale": 0.6,
+          "position": "top-center"
+        },
+        "image": {
+          "show": false,
+          "scale": 0
+        },
+        "title": {
+          "show": true,
+          "scale": 0.5,
+          "minSize": 24,
+          "maxSize": 28
+        },
+        "subtitle": {
+          "show": false,
+          "scale": 0
+        },
+        "body": {
+          "show": true,
+          "scale": 0.7,
+          "minSize": 12,
+          "maxSize": 14
+        },
+        "legal": {
+          "show": true,
+          "scale": 0.8,
+          "minSize": 8
+        }
+      },
+      "spacing": {
+        "margins": 10,
+        "gaps": 8
+      }
+    },
+    {
+      "name": "Small Banner (320x50)",
+      "condition": "width >= 300 && width <= 350 && height <= 60",
+      "layout": "extreme",
+      "elements": {
+        "logo": {
+          "show": true,
+          "scale": 0.3,
+          "position": "left"
+        },
+        "image": {
+          "show": false,
+          "scale": 0
+        },
+        "title": {
+          "show": true,
+          "scale": 0.3,
+          "minSize": 14,
+          "maxSize": 16,
+          "lines": 1
+        },
+        "subtitle": {
+          "show": false,
+          "scale": 0
+        },
+        "body": {
+          "show": false,
+          "scale": 0
+        },
+        "legal": {
+          "show": false,
+          "scale": 0
+        }
+      },
+      "spacing": {
+        "margins": 5,
+        "gaps": 2
+      }
+    },
+    {
+      "name": "Vertical Banner (160x1600)",
+      "condition": "width <= 200 && height >= 1000",
+      "layout": "vertical-extreme",
+      "elements": {
+        "logo": {
+          "show": true,
+          "scale": 0.4,
+          "position": "top-center"
+        },
+        "image": {
+          "show": false,
+          "scale": 0
+        },
+        "title": {
+          "show": true,
+          "scale": 0.4,
+          "minSize": 16,
+          "maxSize": 20
+        },
+        "subtitle": {
+          "show": false,
+          "scale": 0
+        },
+        "body": {
+          "show": true,
+          "scale": 0.5,
+          "minSize": 10,
+          "maxSize": 12
+        },
+        "legal": {
+          "show": true,
+          "scale": 0.6,
+          "minSize": 8
+        }
+      },
+      "spacing": {
+        "margins": 8,
+        "gaps": 6
+      }
+    },
+    {
+      "name": "Small Square (300x300)",
+      "condition": "width >= 250 && width <= 350 && height >= 200 && height <= 350",
+      "layout": "compact",
+      "elements": {
+        "logo": {
+          "show": true,
+          "scale": 0.5,
+          "position": "top-left"
+        },
+        "image": {
+          "show": true,
+          "scale": 0.6,
+          "maxHeight": "40%"
+        },
+        "title": {
+          "show": true,
+          "scale": 0.6,
+          "minSize": 18,
+          "maxSize": 24
+        },
+        "subtitle": {
+          "show": true,
+          "scale": 0.5,
+          "minSize": 10,
+          "maxSize": 12
+        },
+        "body": {
+          "show": false,
+          "scale": 0
+        },
+        "legal": {
+          "show": true,
+          "scale": 0.6,
+          "minSize": 8
+        }
+      },
+      "spacing": {
+        "margins": 10,
+        "gaps": 8
+      }
+    }
+  ],
+  "defaults": {
+    "spacing": {
+      "margins": "proportional",
+      "gaps": "proportional"
+    },
+    "typography": {
+      "lineHeightRatio": 1.2
+    },
+    "image": {
+      "minVisibleHeight": "30%",
+      "preserveAspectRatio": true
+    }
+  }
+}
