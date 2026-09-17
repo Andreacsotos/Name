@@ -1,12 +1,10 @@
 {
   "name": "Smart Size - Intelligent Design Resizer",
-  "id": "1234567890:0",
+  "id": "987654321987654321",
   "api": "1.0.0",
   "main": "dist/plugin.js",
   "ui": "dist/ui.html",
-  "permissions": [
-    "currentuser"
-  ],
+  "permissions": [],
   "editorType": [
     "figma"
   ]
