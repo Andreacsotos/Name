@@ -11,15 +11,15 @@ import {
 } from "./types/index.js";
 
 // Importar configuraciones
-import smartRulesConfig from "../config/smartRules.json" with { type: "json" };
-import formatsConfig from "../config/formats.json" with { type: "json" };
+const smartRulesConfig = require("../config/smartRules.json");
+const formatsConfig = require("../config/formats.json");
 
 export class SmartSizePlugin {
   private analyzer: DesignAnalyzer;
   private calculator: DesignCalculator;
   private validator: DesignValidator;
   private generator: DesignGenerator;
-  private smartRules: SmartRule[];
+  private smartRules: any[];
   private formats: Map<string, Format>;
 
   constructor() {
@@ -29,7 +29,7 @@ export class SmartSizePlugin {
     this.generator = new DesignGenerator();
 
     // Cargar smart rules
-    this.smartRules = smartRulesConfig.rules;
+    this.smartRules = smartRulesConfig.rules || [];
 
     // Cargar formatos
     this.formats = this.loadFormats();
