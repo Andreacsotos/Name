@@ -22,9 +22,7 @@
   ],
   "author": "Andrea",
   "license": "MIT",
-  "dependencies": {
-    "figma-api": "^1.15.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^20.0.0",
     "esbuild": "^0.20.0",
